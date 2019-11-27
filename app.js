@@ -36,7 +36,7 @@ MongoDB.connect(
                 console.log(data);
             });
 
-        // Insert a record, to check if app is connecting to server
+        // Insert a record, to check if app is connecting to server///
         db.collection("courses").insertOne({
                 title: "BSc Hon Physics",
                 code: "PH234",
