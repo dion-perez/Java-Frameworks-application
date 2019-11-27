@@ -1,0 +1,33 @@
+  <div class="grid-x grid-padding-x">
+    <div class="small-4 cell">
+      <img src="img/courses.jpg" alt="Courses">
+
+    </div>
+
+    <div class="small-8 cell">
+
+      <h1>Courses on Offer</h1>
+
+      <table>
+        <tr>
+          <td style="text-align:center"><b>Course Title</b></td>
+          <td style="text-align:center"><b>Course Code</b></td>
+          <td style="text-align:center"><b>Course Leader</b></td>
+          <td style="text-align:center"><b>Course Department</b></td>
+        </tr>
+      <% offeredCourses.forEach(function(el, index) { %>
+        <tr>  
+          <td><%= el.title %></td>
+          <td><%= el.code %></td>
+          <td><%= el.leader %></td>
+          <td><%= el.department %></td>
+        </tr>
+          <%  }); %>
+      </table>
+
+    </div>
+
+  </div>
+
+
+  <hr />
